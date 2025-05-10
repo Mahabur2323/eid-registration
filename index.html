@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ঈদ রেজিস্ট্রেশন ফর্ম</title>
+  <style>
+    body { font-family: Arial; max-width: 600px; margin: auto; padding: 20px; background-color: #f9f9f9; }
+    h2 { text-align: center; }
+    form { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px #ccc; }
+    input, select { width: 100%; padding: 10px; margin: 10px 0; }
+    button { background: green; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h2>ঈদ অনুষ্ঠানের রেজিস্ট্রেশন ফর্ম</h2>
+  <form action="https://formspree.io/f/xdkgdrzp" method="POST">
+    <label>ছাত্র/ছাত্রীর নাম:</label>
+    <input type="text" name="student_name" required>
+
+    <label>শ্রেণি:</label>
+    <input type="text" name="class" required>
+
+    <label>অভিভাবকের নাম:</label>
+    <input type="text" name="guardian_name" required>
+
+    <label>মোট কয়জন আসবেন:</label>
+    <input type="number" name="family_members" required>
+
+    <label>মোবাইল নম্বর (ঐচ্ছিক):</label>
+    <input type="tel" name="phone">
+
+    <button type="submit">জমা দিন</button>
+  </form>
+</body>
+</html>
